@@ -1,4 +1,4 @@
-#express-logger
+#loggerware
 
 >An express middleware for application access and error logs
 
@@ -7,14 +7,14 @@
 Add the package to your project:
 
 ```bash
-$ npm install git+https://github.com/agreco/express-logger.git
+$ npm install git+https://github.com/agreco/loggerware.git
 ```
 
 Include it in your app:
 
 ```javascript
 var express = require('express'),
-    logger = require('express-logger');
+    logger = require('loggerware');
 
 app = express();
 
