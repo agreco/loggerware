@@ -1,0 +1,10 @@
+*.iml
+.classpath
+.DS_Store
+.idea/
+.project
+.screenrc
+.jshintrc
+.settings/
+node_modules/
+npm-debug.log
