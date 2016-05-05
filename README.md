@@ -19,7 +19,16 @@ var express = require('express'),
 app = express();
 
 // Apply the middleware to your application, ready for logging access and errors for all requests
-app.use(logger);
+// Register middleware
+app.use(logger.register('access', {
+    file: '/var/tmp/your-access.log'
+}));
+
+more code here...
+
+app.use(logger.register('error', {
+    file: '/var/tmp/your-error.log'
+}));
 ```
 
 ### Info
