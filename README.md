@@ -14,7 +14,7 @@ Include it in your app:
 
 ```javascript
 var express = require('express'),
-    logger = require('loggerware');
+    logger = require('loggerware')({ name: 'my-logger' });
 
 app = express();
 
