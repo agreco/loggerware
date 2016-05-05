@@ -7,7 +7,7 @@
 Add the package to your project:
 
 ```bash
-$ npm install git+https://github.com/agreco/loggerware.git
+$ npm install loggerware
 ```
 
 Include it in your app:
