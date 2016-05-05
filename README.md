@@ -7,7 +7,7 @@
 Add the package to your project:
 
 ```bash
-$ npm install git+https://github.com/scm/www/express-logger.git
+$ npm install git+https://github.com/agreco/express-logger.git
 ```
 
 Include it in your app:

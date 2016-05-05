@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": "An express middleware for application access and error logs",
   "main": "index.js",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "bunyan",
+    "express",
+    "logging",
+    "morgan",
+    "syslog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agreco/express-logger"
+  },
   "dependencies": {
     "bunyan": "^1.3.4",
     "bunyan-syslog": "^0.3.0",
