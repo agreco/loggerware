@@ -44,7 +44,7 @@ app.listen(port, function () {
 ```
 *Order matters here, for more information on middleware placement goto: [http://expressjs.com/en/guide/using-middleware.html](http://expressjs.com/en/guide/using-middleware.html)
 
-##GUIDE
+##Guide
 
 ####Creating a logger
 Requiring **loggerware** will return a method that creates a [bunyan](https://www.npmjs.com/package/bunyan) logger and exposes extra functionality for creating and registering loggers.
