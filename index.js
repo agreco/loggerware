@@ -10,7 +10,7 @@ var fs = require('fs'),
     log,
     loggers = {
         access: function (config) {
-            var msyslogStrm = new msyslog.Stream(),
+            var msyslogStrm = new msyslog.Stream('LOG_INFO', 'LOG_LOCAL1'),
                 conf = { format: (config && config.format) || 'combined', opts: { stream: new stream() } };
 
             conf.opts.stream.pipe(process.stdout);
