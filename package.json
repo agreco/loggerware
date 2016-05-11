@@ -1,6 +1,6 @@
 {
   "name": "loggerware",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An express middleware for application access and error logs",
   "main": "index.js",
   "license": "MIT",
