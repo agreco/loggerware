@@ -14,6 +14,7 @@ var fs = require('fs'),
             if (config && config.file) {
                 conf.opts.stream.pipe(fs.createWriteStream(config.file, { flags: 'a' }));
             }
+            conf.opts.stream.pipe(msyslogStrm);
             return morgan(conf.format, conf.opts);
         },
         error: function (config) {
