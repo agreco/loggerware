@@ -5,7 +5,6 @@ var fs = require('fs'),
     bunyan = require('bunyan'),
     stream = require('stream').PassThrough,
     bunyanMiddleware = require('express-bunyan-logger'),
-    bsyslog = require('bunyan-syslog'),
     msyslog = require('modern-syslog'),
     log,
     loggers = {
@@ -27,15 +26,6 @@ var fs = require('fs'),
                         {
                             level: 'error',
                             stream: process.stderr
-                        }, {
-                            level: 'error',
-                            type: 'raw',
-                            stream: bsyslog.createBunyanStream({
-                                type: 'sys',
-                                facility: bsyslog.local0,
-                                host: '127.0.0.1',
-                                port: 514
-                            })
                         }
                     ]
                 };
