@@ -1,0 +1,9 @@
+
+export NODE_ENV=test
+ava
+
+function finish {
+    pkill -P $$
+}
+
+trap finish EXIT
