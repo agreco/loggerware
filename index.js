@@ -5,10 +5,12 @@ var fs = require('fs'),
     bunyan = require('bunyan'),
     stream = require('stream').PassThrough,
     bunyanMiddleware = require('express-bunyan-logger'),
+    msyslog = require('modern-syslog'),
     log,
     loggers = {
         access: function (config) {
-            var conf = { format: (config && config.format) || 'combined', opts: { stream: new stream() } };
+            var msyslogStrm = new msyslog.Stream('LOG_INFO', 'LOG_LOCAL1'),
+                conf = { format: (config && config.format) || 'combined', opts: { stream: new stream() } };
 
             conf.opts.stream.pipe(process.stdout);
             if (config && config.file) {
