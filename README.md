@@ -1,11 +1,11 @@
-#loggerware
+# loggerware
 
 _An express middleware for application access and error logs_
 
 **loggerware** listens to every request, logging to `STDOUT` and `STDERR` for access and error logging respectively. It does
 not manipulate any request or response.
 
-##Quick Start
+## Quick Start
 
 Add the package to your project:
 
@@ -44,9 +44,9 @@ app.listen(port, function () {
 ```
 *Order matters here, for more information on middleware placement goto: [http://expressjs.com/en/guide/using-middleware.html](http://expressjs.com/en/guide/using-middleware.html)
 
-##Guide
+## Guide
 
-####Creating a logger
+#### Creating a logger
 Requiring **loggerware** will return a method that creates a [bunyan](https://www.npmjs.com/package/bunyan) logger and exposes extra functionality for creating and registering loggers.
 
 So, executing the following:
@@ -73,7 +73,7 @@ The `loggerware.create` signature is `create([, configuration :: Object])`.
 
 - The optional `configuration` parameter gets passed to the `bunyan.createLogger` method. See the [bunyan.createLogger](https://www.npmjs.com/package/bunyan#constructor-api) api for more details.
 
-####Registering access and error loggers
+#### Registering access and error loggers
 Once you have instantiated a logger, you can register access and error loggers for your application by using the `loggerware.register` method.
 
 The following registers two loggers to the default logger:
@@ -104,5 +104,5 @@ The optional `configuration` object parameter can consist of `format` and `file`
 - The `format` key specifies the [morgan](https://www.npmjs.com/package/morgan) logger format, by default `combined` is used.
 - The `file` key specifies the file to log to. If no `file` key is supplied, your logging will just be streamed to `STDOUT` and `STDERR`.
 
-##License
+## License
 [MIT](http://www.github.com/agreco/loggerware/LICENSE)
