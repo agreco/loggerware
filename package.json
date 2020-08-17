@@ -26,10 +26,10 @@
     "url": "https://github.com/agreco/loggerware"
   },
   "dependencies": {
-    "ava": "^0.21.0",
+    "ava": "^3.0.0",
     "bunyan": "^1.8.1",
     "express-bunyan-logger": "^1.2.0",
     "morgan": "^1.7.0",
-    "nock": "^8.0.0"
+    "nock": "^9.0.3"
   }
 }
